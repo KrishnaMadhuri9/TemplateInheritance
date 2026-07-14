@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Conditional Statements</h1>
+    <!-- print the student scored more than 85 from marks list in dictionary -->
+    <ul>
+        {% for key,value in marks.items %}
+        {% if value > 85 %}
+        <li>{{key}} scored {{value}}</li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+    <p>{{updated}}</p>
+</body>
+</html>
